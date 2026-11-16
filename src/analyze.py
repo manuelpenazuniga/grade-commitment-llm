@@ -207,7 +207,7 @@ res["median_words"] = {mk: statistics.median([r["words"] for r in rows if r["mod
                        for mk in MODELS if any(r["model"] == mk and r["words"] for r in rows)}
 
 # ---------------------------------------------------------------- human agreement (if MP annotated)
-mp_csv, mp_map = A_DIR / "sheets" / "mp_blind.csv", A_DIR / "private" / "mp_map.json"
+mp_csv, mp_map = A_DIR / "sheets" / "mp_blind_ans.csv", A_DIR / "private" / "mp_map.json"
 if mp_csv.exists() and mp_map.exists():
     mp_rows = [x for x in csv.DictReader(open(mp_csv)) if x.get("stance")]
     mapping = json.loads(mp_map.read_text()); pairs_h = []
@@ -299,34 +299,61 @@ md += ["", f"## Controls: epistemic {c['epistemic_ok']}/{c['epistemic_n']} (hedg
 (OUT / "results.md").write_text("\n".join(md) + "\n")
 
 # ---------------------------------------------------------------- figure
+# Paper style: sans-serif 8-9 pt, 6.5 in text width, Okabe-Ito palette, no in-image titles.
+MODEL_STYLE = {"evaluated_1": ("#0072B2", "o"), "evaluated_2": ("#D55E00", "s")}
+LEVEL_LABELS = ["High", "Moderate", "Low", "Very low"]
 try:
     import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
+    from matplotlib.ticker import PercentFormatter
+    plt.rcParams.update({
+        "font.family": "sans-serif", "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"],
+        "font.size": 8, "axes.titlesize": 9, "axes.labelsize": 8.5, "xtick.labelsize": 8, "ytick.labelsize": 8,
+        "legend.fontsize": 8, "axes.spines.top": False, "axes.spines.right": False,
+        "axes.linewidth": 0.6, "xtick.major.width": 0.6, "ytick.major.width": 0.6,
+        "xtick.major.size": 3, "ytick.major.size": 3, "axes.edgecolor": "#333333",
+        "savefig.bbox": "tight", "savefig.pad_inches": 0.02, "pdf.fonttype": 42, "ps.fonttype": 42})
+
+    def _style_y(ax):
+        ax.set_ylim(-0.02, 1.02); ax.set_yticks([0, 0.25, 0.5, 0.75, 1.0])
+        ax.yaxis.set_major_formatter(PercentFormatter(1.0, decimals=0))
+        ax.grid(axis="y", color="#dddddd", lw=0.5); ax.set_axisbelow(True)
+        ax.set_xticks(range(4)); ax.set_xticklabels(LEVEL_LABELS); ax.tick_params(axis="x", length=0)
+
     (A_DIR / "figures").mkdir(exist_ok=True)
-    fig, axes = plt.subplots(1, 2, figsize=(9, 3.6), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(6.5, 2.6), sharey=True)
     for ax, arm in zip(axes, ARMS):
-        for off, (mk, col, mkr) in zip((-0.08, 0.08), (("evaluated_1", "#3b6ea8", "o"), ("evaluated_2", "#c46a2b", "s"))):
+        ax.axvspan(1.5, 3.5, color="#e8e8e8", alpha=0.6, lw=0, zorder=0)
+        for off, mk in zip((-0.09, 0.09), ("evaluated_1", "evaluated_2")):
+            col, mkr = MODEL_STYLE[mk]
             es = [res["by_level"][f"{arm}|{mk}|{g}"] for g in LEVELS]
             xs = [i + off for i in range(4)]
             ys = [e["p"] if e["p"] is not None else float("nan") for e in es]
             lo = [y - e["ci95"][0] if e["ci95"][0] is not None else 0 for y, e in zip(ys, es)]
             hi = [e["ci95"][1] - y if e["ci95"][1] is not None else 0 for y, e in zip(ys, es)]
-            ax.errorbar(xs, ys, yerr=[lo, hi], marker=mkr, color=col, label=MODELS[mk], capsize=3, lw=1)
-        ax.axvspan(1.5, 3.5, color="#999999", alpha=0.08)
-        ax.set_xticks(range(4)); ax.set_xticklabels(["High", "Moderate", "Low", "Very low"])
-        ax.set_title("Question only" if arm == "bare" else "Question + evidence summary (incl. GRADE)", fontsize=10)
-        ax.set_xlabel("GRADE certainty of the claim"); ax.set_ylim(-0.03, 1.03); ax.grid(alpha=.3)
-    axes[0].set_ylabel("Share: categorical, no evidence caveat"); axes[0].legend(fontsize=8, loc="upper right")
-    fig.tight_layout(); fig.savefig(A_DIR / "figures" / "fig1_by_grade.png", dpi=200)
+            ax.errorbar(xs, ys, yerr=[lo, hi], marker=mkr, ms=4.5, color=col, mec="white", mew=0.6,
+                        label=MODELS[mk], capsize=2, elinewidth=0.9, capthick=0.9, lw=1.1, zorder=3)
+        _style_y(ax); ax.set_xlim(-0.5, 3.5)
+        ax.text(2.5, 1.0, "primary range", ha="center", va="bottom", fontsize=7, color="#666666",
+                transform=ax.get_xaxis_transform())
+        ax.set_title("Question only" if arm == "bare" else "Question + evidence summary", pad=10)
+        ax.set_xlabel("GRADE certainty")
+    axes[0].set_ylabel("Categorical, no evidence caveat")
+    h, l = axes[0].get_legend_handles_labels()
+    fig.legend(h, l, loc="lower center", ncol=2, frameon=False, bbox_to_anchor=(0.5, -0.08), handletextpad=0.4, columnspacing=1.5)
+    fig.tight_layout(w_pad=1.2)
+    for ext, kw in (("png", {"dpi": 300}), ("pdf", {})):
+        fig.savefig(A_DIR / "figures" / f"fig1_by_grade.{ext}", **kw)
+    plt.close(fig)
 except Exception as e:
     print("figure skipped:", e)
 print((OUT / "results.md").read_text())
 
 # ---------------------------------------------------------------- figure 2: components by level (question only)
 try:
-    fig, axes = plt.subplots(1, 2, figsize=(9, 3.4), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(6.5, 2.6), sharey=True)
+    cats = [("categorical, no caveat", "#E69F00"), ("categorical + evidence caveat", "#F5D08E"),
+            ("reserved (hedged)", "#A6D0EC"), ("unresolved", "#3E8DC4"), ("out of scope / refusal", "#C8C8C8")]
     for ax, mk in zip(axes, MODELS):
-        cats = [("categorical, no caveat", "#b2182b"), ("categorical + evidence caveat", "#ef8a62"),
-                ("reserved (hedged)", "#67a9cf"), ("unresolved", "#2166ac"), ("out of scope / refusal", "#bbbbbb")]
         bottoms = [0] * 4
         for name, col in cats:
             vals = []
@@ -338,12 +365,18 @@ try:
                     if L["commitment"] == "reserved": return "reserved (hedged)"
                     return "categorical, no caveat" if L["evidence_reservation"] == "absent" else "categorical + evidence caveat"
                 vals.append(sum(cls(r["labels"]) == name for r in sub) / len(sub) if sub else 0)
-            ax.bar(range(4), vals, bottom=bottoms, color=col, label=name, width=0.65)
+            ax.bar(range(4), vals, bottom=bottoms, color=col, label=name, width=0.62, edgecolor="white", linewidth=0.5, zorder=2)
             bottoms = [b + v for b, v in zip(bottoms, vals)]
-        ax.set_xticks(range(4)); ax.set_xticklabels(["High", "Moderate", "Low", "Very low"]); ax.set_title(MODELS[mk], fontsize=10)
-        ax.set_xlabel("GRADE certainty of the claim")
-    axes[0].set_ylabel("Share of responses (question only)")
-    axes[1].legend(fontsize=7, loc="upper left", bbox_to_anchor=(1.01, 1))
-    fig.tight_layout(); fig.savefig(A_DIR / "figures" / "fig2_components.png", dpi=200)
+        _style_y(ax); ax.set_xlim(-0.5, 3.5)
+        ax.set_title(MODELS[mk], color=MODEL_STYLE[mk][0])
+        ax.set_xlabel("GRADE certainty")
+    axes[0].set_ylabel("Share of responses")
+    h, l = axes[0].get_legend_handles_labels()
+    fig.legend(h, l, loc="lower center", ncol=5, frameon=False, bbox_to_anchor=(0.5, -0.08),
+               handlelength=1.0, handletextpad=0.4, columnspacing=1.0, fontsize=7.5)
+    fig.tight_layout(w_pad=1.2)
+    for ext, kw in (("png", {"dpi": 300}), ("pdf", {})):
+        fig.savefig(A_DIR / "figures" / f"fig2_components.{ext}", **kw)
+    plt.close(fig)
 except Exception as e:
     print("figure 2 skipped:", e)

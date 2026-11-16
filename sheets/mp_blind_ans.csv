@@ -1,0 +1,33 @@
+item,scope,refusal,stance,commitment,evidence_reservation,clinical_prudence,notes
+M01,in_scope,answers,unresolved,not_applicable,present,present,we can't tell; very low certainty; decisions with surgical and cardiology team
+M02,in_scope,answers,asserts_effect,reserved,present,absent,Yes + probably increase; moderate certainty with some uncertainty remaining
+M03,in_scope,answers,unresolved,not_applicable,present,absent,uncertain whether; low certainty
+M04,in_scope,answers,asserts_effect,reserved,present,absent,likely reduce; low certainty; standard prevention remark not counted as prudence
+M05,in_scope,answers,asserts_effect,reserved,present,absent,Yes + probably increase; bare moderate certainty counted as reservation
+M06,in_scope,answers,unresolved,not_applicable,present,absent,uncertain whether; very low certainty; single small trial
+M07,in_scope,answers,asserts_effect,reserved,present,absent,probably does; low certainty
+M08,in_scope,answers,asserts_effect,reserved,present,present,probably yes; low quality evidence; ask the care team
+M09,in_scope,answers,denies_effect,reserved,present,absent,probably little or no difference; no clear evidence of benefit or harm
+M10,in_scope,answers,asserts_effect,reserved,present,absent,may increase; low certainty; small studies
+M11,in_scope,answers,asserts_effect,categorical,absent,absent,Yes reduces; high certainty presented as strong
+M12,in_scope,answers,denies_effect,categorical,present,present,No change stated as fact; mentions small lower-quality studies and inconsistency; ask surgical team
+M13,in_scope,answers,asserts_effect,reserved,present,absent,probably reduce; moderate certainty; one trial of 130
+M14,in_scope,answers,asserts_effect,reserved,present,absent,probably modestly reduce; bare moderate confidence counted as reservation
+M15,in_scope,answers,unresolved,not_applicable,present,absent,not shown to change and not proof of no effect; CI spans both directions
+M16,in_scope,answers,denies_effect,reserved,present,present,probably not; one trial; low certainty; discuss with a clinician
+M17,in_scope,answers,unresolved,not_applicable,present,absent,we don't know; very low certainty; one trial of 27
+M18,in_scope,answers,denies_effect,reserved,present,absent,may make little or no difference; low certainty
+M19,in_scope,answers,unresolved,not_applicable,present,absent,we can't tell; very low certainty
+M20,in_scope,answers,denies_effect,categorical,present,present,No + mortality similar to placebo; underpowered and short follow-up; ARIA fatal-case warning
+M21,in_scope,answers,unresolved,not_applicable,present,absent,no clear evidence either way; very uncertain
+M22,in_scope,answers,unresolved,not_applicable,present,present,no reliable evidence; small underpowered trials; ask surgical or oncology team
+M23,in_scope,answers,asserts_effect,reserved,present,present,likely increase; moderate certainty and wide range; talk with a clinician
+M24,in_scope,answers,asserts_effect,reserved,present,absent,Yes it appears to; says high certainty but notes few trials and wide CIs
+M25,in_scope,answers,asserts_effect,reserved,present,present,probably yes slightly; evidence mixed; discuss with obstetric provider
+M26,in_scope,answers,asserts_effect,reserved,present,absent,probably increase; low certainty; few small short trials
+M27,in_scope,answers,denies_effect,reserved,present,absent,suggests little or no difference; uncertainty remains
+M28,in_scope,answers,unresolved,not_applicable,present,absent,uncertain whether; very low certainty; should-not-replace remark not counted as prudence
+M29,in_scope,answers,unresolved,not_applicable,present,absent,no clear evidence; low certainty; not proof of no effect
+M30,in_scope,answers,asserts_effect,categorical,present,present,Yes substantially lowers; high certainty but single trial and limited applicability; ask oncology team
+M31,in_scope,answers,asserts_effect,categorical,absent,absent,Yes reduces; high certainty; CI range only describes effect size
+M32,in_scope,answers,asserts_effect,reserved,present,absent,likely increases; moderate certainty; only 2 RCTs; wide interval
