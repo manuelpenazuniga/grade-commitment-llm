@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Does the Answer Know How Good the Evidence Is? Commitment of Commercial LLM Answers to Patient Questions Across GRADE Certainty Levels"
+authors:
+  - family-names: "Peña-Zúñiga"
+    given-names: "Manuel"
+date-released: 2026-11-16
+license: MIT
+repository-code: "https://github.com/manuelpenazuniga/grade-commitment-llm"
+type: software

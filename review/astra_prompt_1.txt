@@ -1,0 +1,19 @@
+You are advising on the statistical analysis of a small pre-registered experiment for a short research paper (AI x Epistemics sprint, deadline in about 8 hours). Below are the frozen protocol and the analysis script (Python). Data are being collected now; you will not see any results in this message.
+
+Please answer concisely, in English, with numbered points:
+1. Bugs or errors in the analysis script that would produce wrong numbers (be specific: line or function).
+2. Statistical problems with the planned primary and secondary analyses given the design (40 claims from 28 reviews, 10 per GRADE level, 2 models x 2 prompts x 2 arms, one sample per cell, binary outcome). Is the cluster bootstrap over reviews appropriate? Anything better that is feasible in a few hours with standard-library Python?
+3. Up to 5 robustness or sensitivity analyses worth adding, clearly marked as exploratory (not pre-registered), prioritised by value for the reader.
+4. Confounds the paper must address explicitly (for example GRADE level vs whether the CI includes the null) and the simplest honest way to show them.
+5. How to present the main result in one figure and one table for an 8-page paper.
+
+Do not invent results. If something cannot be decided without data, say so.
+
+===== PROTOCOL.md =====
+{protocol}
+
+===== src/analyze.py =====
+{analyze}
+
+===== src/common.py (binary_outcome definition) =====
+{common}

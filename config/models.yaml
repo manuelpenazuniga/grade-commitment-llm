@@ -1,0 +1,5 @@
+# Model identifiers as listed by each CLI on 2026-11-13. Temperature is not exposed by any CLI.
+roles:
+  evaluated_1: {cli: codex, model: gpt-6.1-sol, effort: medium, family: openai}
+  evaluated_2: {cli: claude, model: claude-sonnet-5-5, effort: medium, family: anthropic}
+  judge: {cli: agy, model: gemini-4-argon-medium, effort: medium, family: google}

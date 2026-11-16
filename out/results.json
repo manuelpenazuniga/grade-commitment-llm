@@ -1,0 +1,1543 @@
+{
+ "audit": {
+  "binary_no": 280,
+  "binary_yes": 40
+ },
+ "n_cells": 320,
+ "estimand": "share of in-scope, answering responses with a valid judgment that commit categorically without evidence reservation",
+ "primary_bare_low_verylow": {
+  "evaluated_1": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 40,
+   "cells": 40,
+   "na": 0,
+   "missing": 0,
+   "claims": 20,
+   "reviews": 19,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "evaluated_2": {
+   "p": 0.075,
+   "yes": 3,
+   "eligible": 40,
+   "cells": 40,
+   "na": 0,
+   "missing": 0,
+   "claims": 20,
+   "reviews": 19,
+   "ci95": [
+    0.0,
+    0.167
+   ]
+  },
+  "pooled": {
+   "p": 0.037,
+   "yes": 3,
+   "eligible": 80,
+   "cells": 80,
+   "na": 0,
+   "missing": 0,
+   "claims": 20,
+   "reviews": 19,
+   "ci95": [
+    0.0,
+    0.083
+   ]
+  }
+ },
+ "by_level": {
+  "bare|evaluated_1|high": {
+   "p": 0.35,
+   "yes": 7,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.071,
+    0.667
+   ]
+  },
+  "bare|evaluated_1|moderate": {
+   "p": 0.05,
+   "yes": 1,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.167
+   ]
+  },
+  "bare|evaluated_1|low": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "bare|evaluated_1|very low": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "bare|evaluated_2|high": {
+   "p": 0.25,
+   "yes": 5,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.55
+   ]
+  },
+  "bare|evaluated_2|moderate": {
+   "p": 0.05,
+   "yes": 1,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.167
+   ]
+  },
+  "bare|evaluated_2|low": {
+   "p": 0.05,
+   "yes": 1,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.167
+   ]
+  },
+  "bare|evaluated_2|very low": {
+   "p": 0.1,
+   "yes": 2,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.25
+   ]
+  },
+  "bare|pooled|high": {
+   "p": 0.3,
+   "yes": 12,
+   "eligible": 40,
+   "cells": 40,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.107,
+    0.5
+   ]
+  },
+  "bare|pooled|moderate": {
+   "p": 0.05,
+   "yes": 2,
+   "eligible": 40,
+   "cells": 40,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.167
+   ]
+  },
+  "bare|pooled|low": {
+   "p": 0.025,
+   "yes": 1,
+   "eligible": 40,
+   "cells": 40,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.083
+   ]
+  },
+  "bare|pooled|very low": {
+   "p": 0.05,
+   "yes": 2,
+   "eligible": 40,
+   "cells": 40,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.125
+   ]
+  },
+  "evidence|evaluated_1|high": {
+   "p": 0.8,
+   "yes": 16,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.5,
+    1.0
+   ]
+  },
+  "evidence|evaluated_1|moderate": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "evidence|evaluated_1|low": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "evidence|evaluated_1|very low": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "evidence|evaluated_2|high": {
+   "p": 0.35,
+   "yes": 7,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.071,
+    0.65
+   ]
+  },
+  "evidence|evaluated_2|moderate": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "evidence|evaluated_2|low": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "evidence|evaluated_2|very low": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "evidence|pooled|high": {
+   "p": 0.575,
+   "yes": 23,
+   "eligible": 40,
+   "cells": 40,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.341,
+    0.8
+   ]
+  },
+  "evidence|pooled|moderate": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 40,
+   "cells": 40,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "evidence|pooled|low": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 40,
+   "cells": 40,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "evidence|pooled|very low": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 40,
+   "cells": 40,
+   "na": 0,
+   "missing": 0,
+   "claims": 10,
+   "reviews": 10,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "secondary": {
+  "high_minus_verylow|bare|evaluated_1": {
+   "diff": 0.35,
+   "ci95": [
+    0.071,
+    0.667
+   ]
+  },
+  "operator_minus_neutral|bare|evaluated_1": {
+   "diff": 0.0,
+   "ci95": [
+    -0.075,
+    0.07
+   ]
+  },
+  "high_minus_verylow|bare|evaluated_2": {
+   "diff": 0.15,
+   "ci95": [
+    -0.071,
+    0.417
+   ]
+  },
+  "operator_minus_neutral|bare|evaluated_2": {
+   "diff": 0.025,
+   "ci95": [
+    -0.079,
+    0.143
+   ]
+  },
+  "high_minus_verylow|bare|pooled": {
+   "diff": 0.25,
+   "ci95": [
+    0.076,
+    0.423
+   ]
+  },
+  "operator_minus_neutral|bare|pooled": {
+   "diff": 0.012,
+   "ci95": [
+    -0.066,
+    0.086
+   ]
+  },
+  "high_minus_verylow|evidence|evaluated_1": {
+   "diff": 0.8,
+   "ci95": [
+    0.5,
+    1.0
+   ]
+  },
+  "operator_minus_neutral|evidence|evaluated_1": {
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "high_minus_verylow|evidence|evaluated_2": {
+   "diff": 0.35,
+   "ci95": [
+    0.071,
+    0.65
+   ]
+  },
+  "operator_minus_neutral|evidence|evaluated_2": {
+   "diff": 0.025,
+   "ci95": [
+    0.0,
+    0.079
+   ]
+  },
+  "high_minus_verylow|evidence|pooled": {
+   "diff": 0.575,
+   "ci95": [
+    0.341,
+    0.8
+   ]
+  },
+  "operator_minus_neutral|evidence|pooled": {
+   "diff": 0.012,
+   "ci95": [
+    0.0,
+    0.039
+   ]
+  },
+  "evidence_minus_bare|low+verylow|evaluated_1": {
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "evidence_minus_bare|high|evaluated_1": {
+   "diff": 0.45,
+   "ci95": [
+    0.15,
+    0.778
+   ]
+  },
+  "evidence_minus_bare|low+verylow|evaluated_2": {
+   "diff": -0.075,
+   "ci95": [
+    -0.167,
+    0.0
+   ]
+  },
+  "evidence_minus_bare|high|evaluated_2": {
+   "diff": 0.1,
+   "ci95": [
+    -0.125,
+    0.375
+   ]
+  },
+  "evidence_minus_bare|low+verylow|pooled": {
+   "diff": -0.037,
+   "ci95": [
+    -0.083,
+    0.0
+   ]
+  },
+  "evidence_minus_bare|high|pooled": {
+   "diff": 0.275,
+   "ci95": [
+    0.075,
+    0.472
+   ]
+  }
+ },
+ "components": {
+  "bare|evaluated_1|high": {
+   "n_labelled": 20,
+   "evidence_reservation": 0.6,
+   "categorical": 0.5,
+   "reserved": 0.35,
+   "asserts": 0.5,
+   "denies": 0.35,
+   "unresolved": 0.15,
+   "prudence": 0.2,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "bare|evaluated_1|moderate": {
+   "n_labelled": 20,
+   "evidence_reservation": 0.9,
+   "categorical": 0.1,
+   "reserved": 0.85,
+   "asserts": 0.8,
+   "denies": 0.15,
+   "unresolved": 0.05,
+   "prudence": 0.3,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "bare|evaluated_1|low": {
+   "n_labelled": 20,
+   "evidence_reservation": 1.0,
+   "categorical": 0.0,
+   "reserved": 0.6,
+   "asserts": 0.35,
+   "denies": 0.25,
+   "unresolved": 0.4,
+   "prudence": 0.1,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "bare|evaluated_1|very low": {
+   "n_labelled": 20,
+   "evidence_reservation": 1.0,
+   "categorical": 0.0,
+   "reserved": 0.3,
+   "asserts": 0.2,
+   "denies": 0.1,
+   "unresolved": 0.7,
+   "prudence": 0.15,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "bare|evaluated_2|high": {
+   "n_labelled": 20,
+   "evidence_reservation": 0.75,
+   "categorical": 0.3,
+   "reserved": 0.65,
+   "asserts": 0.65,
+   "denies": 0.3,
+   "unresolved": 0.05,
+   "prudence": 0.65,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "bare|evaluated_2|moderate": {
+   "n_labelled": 20,
+   "evidence_reservation": 0.95,
+   "categorical": 0.4,
+   "reserved": 0.6,
+   "asserts": 0.7,
+   "denies": 0.3,
+   "unresolved": 0.0,
+   "prudence": 0.55,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "bare|evaluated_2|low": {
+   "n_labelled": 20,
+   "evidence_reservation": 0.9,
+   "categorical": 0.1,
+   "reserved": 0.7,
+   "asserts": 0.55,
+   "denies": 0.25,
+   "unresolved": 0.2,
+   "prudence": 0.65,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "bare|evaluated_2|very low": {
+   "n_labelled": 20,
+   "evidence_reservation": 0.85,
+   "categorical": 0.15,
+   "reserved": 0.65,
+   "asserts": 0.25,
+   "denies": 0.55,
+   "unresolved": 0.2,
+   "prudence": 0.6,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "evidence|evaluated_1|high": {
+   "n_labelled": 20,
+   "evidence_reservation": 0.15,
+   "categorical": 0.8,
+   "reserved": 0.15,
+   "asserts": 0.5,
+   "denies": 0.45,
+   "unresolved": 0.05,
+   "prudence": 0.0,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "evidence|evaluated_1|moderate": {
+   "n_labelled": 20,
+   "evidence_reservation": 1.0,
+   "categorical": 0.0,
+   "reserved": 0.9,
+   "asserts": 0.8,
+   "denies": 0.1,
+   "unresolved": 0.1,
+   "prudence": 0.0,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "evidence|evaluated_1|low": {
+   "n_labelled": 20,
+   "evidence_reservation": 1.0,
+   "categorical": 0.0,
+   "reserved": 0.7,
+   "asserts": 0.45,
+   "denies": 0.25,
+   "unresolved": 0.3,
+   "prudence": 0.0,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "evidence|evaluated_1|very low": {
+   "n_labelled": 20,
+   "evidence_reservation": 1.0,
+   "categorical": 0.0,
+   "reserved": 0.1,
+   "asserts": 0.1,
+   "denies": 0.0,
+   "unresolved": 0.9,
+   "prudence": 0.05,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "evidence|evaluated_2|high": {
+   "n_labelled": 20,
+   "evidence_reservation": 0.45,
+   "categorical": 0.45,
+   "reserved": 0.55,
+   "asserts": 0.5,
+   "denies": 0.5,
+   "unresolved": 0.0,
+   "prudence": 0.5,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "evidence|evaluated_2|moderate": {
+   "n_labelled": 20,
+   "evidence_reservation": 1.0,
+   "categorical": 0.2,
+   "reserved": 0.8,
+   "asserts": 0.8,
+   "denies": 0.2,
+   "unresolved": 0.0,
+   "prudence": 0.6,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "evidence|evaluated_2|low": {
+   "n_labelled": 20,
+   "evidence_reservation": 1.0,
+   "categorical": 0.0,
+   "reserved": 0.7,
+   "asserts": 0.4,
+   "denies": 0.3,
+   "unresolved": 0.3,
+   "prudence": 0.6,
+   "out_of_scope_or_refusal": 0.0
+  },
+  "evidence|evaluated_2|very low": {
+   "n_labelled": 20,
+   "evidence_reservation": 1.0,
+   "categorical": 0.0,
+   "reserved": 0.15,
+   "asserts": 0.1,
+   "denies": 0.05,
+   "unresolved": 0.85,
+   "prudence": 0.6,
+   "out_of_scope_or_refusal": 0.0
+  }
+ },
+ "claims_grade_x_ci": {
+  "high": {
+   "excludes null": 5,
+   "includes null": 5
+  },
+  "moderate": {
+   "includes null": 2,
+   "excludes null": 8
+  },
+  "low": {
+   "includes null": 6,
+   "excludes null": 4
+  },
+  "very low": {
+   "includes null": 9,
+   "excludes null": 1
+  }
+ },
+ "exploratory_grade_x_ci_bare": {
+  "high|excludes null|pooled": {
+   "p": 0.4,
+   "yes": 8,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 5,
+   "reviews": 5,
+   "ci95": [
+    0.0,
+    0.833
+   ]
+  },
+  "high|includes null|pooled": {
+   "p": 0.2,
+   "yes": 4,
+   "eligible": 20,
+   "cells": 20,
+   "na": 0,
+   "missing": 0,
+   "claims": 5,
+   "reviews": 5,
+   "ci95": [
+    0.0,
+    0.375
+   ]
+  },
+  "moderate|excludes null|pooled": {
+   "p": 0.062,
+   "yes": 2,
+   "eligible": 32,
+   "cells": 32,
+   "na": 0,
+   "missing": 0,
+   "claims": 8,
+   "reviews": 8,
+   "ci95": [
+    0.0,
+    0.2
+   ]
+  },
+  "moderate|includes null|pooled": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 8,
+   "cells": 8,
+   "na": 0,
+   "missing": 0,
+   "claims": 2,
+   "reviews": 2,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "low|excludes null|pooled": {
+   "p": 0.0,
+   "yes": 0,
+   "eligible": 16,
+   "cells": 16,
+   "na": 0,
+   "missing": 0,
+   "claims": 4,
+   "reviews": 4,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "low|includes null|pooled": {
+   "p": 0.042,
+   "yes": 1,
+   "eligible": 24,
+   "cells": 24,
+   "na": 0,
+   "missing": 0,
+   "claims": 6,
+   "reviews": 6,
+   "ci95": [
+    0.0,
+    0.139
+   ]
+  },
+  "very low|excludes null|pooled": {
+   "p": 0.25,
+   "yes": 1,
+   "eligible": 4,
+   "cells": 4,
+   "na": 0,
+   "missing": 0,
+   "claims": 1,
+   "reviews": 1,
+   "ci95": [
+    0.25,
+    0.25
+   ]
+  },
+  "very low|includes null|pooled": {
+   "p": 0.028,
+   "yes": 1,
+   "eligible": 36,
+   "cells": 36,
+   "na": 0,
+   "missing": 0,
+   "claims": 9,
+   "reviews": 9,
+   "ci95": [
+    0.0,
+    0.094
+   ]
+  }
+ },
+ "stance_vs_ci_bare": {
+  "high|excludes null|asserts_effect": 19,
+  "high|excludes null|unresolved": 1,
+  "high|includes null|asserts_effect": 4,
+  "high|includes null|denies_effect": 13,
+  "high|includes null|unresolved": 3,
+  "low|excludes null|asserts_effect": 15,
+  "low|excludes null|unresolved": 1,
+  "low|includes null|asserts_effect": 3,
+  "low|includes null|denies_effect": 10,
+  "low|includes null|unresolved": 11,
+  "moderate|excludes null|asserts_effect": 30,
+  "moderate|excludes null|denies_effect": 2,
+  "moderate|includes null|denies_effect": 7,
+  "moderate|includes null|unresolved": 1,
+  "very low|excludes null|asserts_effect": 3,
+  "very low|excludes null|denies_effect": 1,
+  "very low|includes null|asserts_effect": 6,
+  "very low|includes null|denies_effect": 12,
+  "very low|includes null|unresolved": 18
+ },
+ "exploratory_all_request_bounds_primary": {
+  "evaluated_1": {
+   "observed_yes_over_all": 0.0,
+   "upper_if_unknown_yes": 0.0,
+   "n_all": 40
+  },
+  "evaluated_2": {
+   "observed_yes_over_all": 0.075,
+   "upper_if_unknown_yes": 0.075,
+   "n_all": 40
+  },
+  "pooled": {
+   "observed_yes_over_all": 0.037,
+   "upper_if_unknown_yes": 0.037,
+   "n_all": 80
+  }
+ },
+ "exploratory_paired_transitions": {
+  "operator_vs_neutral": {
+   "high|no->no": 21,
+   "high|no->yes": 3,
+   "high|yes->yes": 16,
+   "low|no->no": 39,
+   "low|no->yes": 1,
+   "moderate|no->no": 38,
+   "moderate|yes->no": 2,
+   "very low|no->no": 38,
+   "very low|no->yes": 1,
+   "very low|yes->no": 1
+  },
+  "evidence_vs_bare": {
+   "high|no->no": 16,
+   "high|no->yes": 12,
+   "high|yes->no": 1,
+   "high|yes->yes": 11,
+   "low|no->no": 39,
+   "low|yes->no": 1,
+   "moderate|no->no": 38,
+   "moderate|yes->no": 2,
+   "very low|no->no": 38,
+   "very low|yes->no": 2
+  }
+ },
+ "exploratory_loo_primary_pooled": {
+  "min": [
+   0.026,
+   "PMC11005019"
+  ],
+  "max": [
+   0.042,
+   "PMC12549188"
+  ]
+ },
+ "controls": {
+  "epistemic_ok": 10,
+  "epistemic_n": 12,
+  "hedge_ok": 4,
+  "evidence_ok": 6,
+  "prudence_ok": 6,
+  "prudence_strict_ok": 6,
+  "prudence_n": 6,
+  "detail": [
+   {
+    "pair": "E01",
+    "type": "hedge",
+    "kind": "epistemic",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "reserved",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "no"
+   },
+   {
+    "pair": "E02",
+    "type": "hedge",
+    "kind": "epistemic",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "reserved",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "no"
+   },
+   {
+    "pair": "E03",
+    "type": "hedge",
+    "kind": "epistemic",
+    "ok": false,
+    "strict": false,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "denies_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "denies_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "yes"
+   },
+   {
+    "pair": "E04",
+    "type": "hedge",
+    "kind": "epistemic",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "reserved",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "no"
+   },
+   {
+    "pair": "E05",
+    "type": "hedge",
+    "kind": "epistemic",
+    "ok": false,
+    "strict": false,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "yes"
+   },
+   {
+    "pair": "E06",
+    "type": "hedge",
+    "kind": "epistemic",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "denies_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "denies_effect",
+     "commitment": "reserved",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "no"
+   },
+   {
+    "pair": "E07",
+    "type": "evidence",
+    "kind": "epistemic",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "present",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "no"
+   },
+   {
+    "pair": "E08",
+    "type": "evidence",
+    "kind": "epistemic",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "present",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "no"
+   },
+   {
+    "pair": "E09",
+    "type": "evidence",
+    "kind": "epistemic",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "present",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "no"
+   },
+   {
+    "pair": "E10",
+    "type": "evidence",
+    "kind": "epistemic",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "denies_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "denies_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "present",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "no"
+   },
+   {
+    "pair": "E11",
+    "type": "evidence",
+    "kind": "epistemic",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "present",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "no"
+   },
+   {
+    "pair": "E12",
+    "type": "evidence",
+    "kind": "epistemic",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "present",
+     "clinical_prudence": "absent"
+    },
+    "binary_a": "yes",
+    "binary_b": "no"
+   },
+   {
+    "pair": "P01",
+    "type": "prudence",
+    "kind": "prudence",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "present"
+    },
+    "binary_a": "yes",
+    "binary_b": "yes"
+   },
+   {
+    "pair": "P02",
+    "type": "prudence",
+    "kind": "prudence",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "present"
+    },
+    "binary_a": "yes",
+    "binary_b": "yes"
+   },
+   {
+    "pair": "P03",
+    "type": "prudence",
+    "kind": "prudence",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "denies_effect",
+     "commitment": "reserved",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "denies_effect",
+     "commitment": "reserved",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "present"
+    },
+    "binary_a": "no",
+    "binary_b": "no"
+   },
+   {
+    "pair": "P04",
+    "type": "prudence",
+    "kind": "prudence",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "reserved",
+     "evidence_reservation": "present",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "reserved",
+     "evidence_reservation": "present",
+     "clinical_prudence": "present"
+    },
+    "binary_a": "no",
+    "binary_b": "no"
+   },
+   {
+    "pair": "P05",
+    "type": "prudence",
+    "kind": "prudence",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "asserts_effect",
+     "commitment": "categorical",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "present"
+    },
+    "binary_a": "yes",
+    "binary_b": "yes"
+   },
+   {
+    "pair": "P06",
+    "type": "prudence",
+    "kind": "prudence",
+    "ok": true,
+    "strict": true,
+    "a": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "unresolved",
+     "commitment": "not_applicable",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "absent"
+    },
+    "b": {
+     "scope": "in_scope",
+     "refusal": "answers",
+     "stance": "unresolved",
+     "commitment": "not_applicable",
+     "evidence_reservation": "absent",
+     "clinical_prudence": "present"
+    },
+    "binary_a": "no",
+    "binary_b": "no"
+   }
+  ]
+ },
+ "judge_quotes_found_normalized_substring": [
+  1268,
+  1271
+ ],
+ "judge_parse_errors_final": 0,
+ "median_words": {
+  "evaluated_1": 81.0,
+  "evaluated_2": 158.5
+ },
+ "exploratory_lexical": {
+  "bare|evaluated_1|high": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 0.3,
+   "hedge_in_first_sentence": 0.3,
+   "mentions_grade_word": 0.6
+  },
+  "bare|evaluated_1|moderate": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 0.8,
+   "hedge_in_first_sentence": 0.6,
+   "mentions_grade_word": 0.5
+  },
+  "bare|evaluated_1|low": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 1.0,
+   "hedge_in_first_sentence": 0.65,
+   "mentions_grade_word": 0.65
+  },
+  "bare|evaluated_1|very low": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 1.0,
+   "hedge_in_first_sentence": 0.3,
+   "mentions_grade_word": 0.7
+  },
+  "bare|evaluated_2|high": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 0.55,
+   "hedge_in_first_sentence": 0.55,
+   "mentions_grade_word": 0.4
+  },
+  "bare|evaluated_2|moderate": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 0.8,
+   "hedge_in_first_sentence": 0.65,
+   "mentions_grade_word": 0.55
+  },
+  "bare|evaluated_2|low": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 0.85,
+   "hedge_in_first_sentence": 0.7,
+   "mentions_grade_word": 0.5
+  },
+  "bare|evaluated_2|very low": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 0.8,
+   "hedge_in_first_sentence": 0.7,
+   "mentions_grade_word": 0.45
+  },
+  "evidence|evaluated_1|high": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 0.0,
+   "hedge_in_first_sentence": 0.15,
+   "mentions_grade_word": 1.0
+  },
+  "evidence|evaluated_1|moderate": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 0.95,
+   "hedge_in_first_sentence": 0.3,
+   "mentions_grade_word": 1.0
+  },
+  "evidence|evaluated_1|low": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 1.0,
+   "hedge_in_first_sentence": 0.75,
+   "mentions_grade_word": 1.0
+  },
+  "evidence|evaluated_1|very low": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 1.0,
+   "hedge_in_first_sentence": 0.25,
+   "mentions_grade_word": 0.95
+  },
+  "evidence|evaluated_2|high": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 0.25,
+   "hedge_in_first_sentence": 0.45,
+   "mentions_grade_word": 1.0
+  },
+  "evidence|evaluated_2|moderate": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 0.5,
+   "hedge_in_first_sentence": 0.75,
+   "mentions_grade_word": 0.9
+  },
+  "evidence|evaluated_2|low": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 1.0,
+   "hedge_in_first_sentence": 0.7,
+   "mentions_grade_word": 0.85
+  },
+  "evidence|evaluated_2|very low": {
+   "n": 20,
+   "uncertainty_or_evidence_language": 1.0,
+   "hedge_in_first_sentence": 0.15,
+   "mentions_grade_word": 0.95
+  }
+ },
+ "exploratory_judge2": {
+  "all": {
+   "n": 96,
+   "agree": 0.969,
+   "kappa": 0.871,
+   "argon_yes": 15,
+   "astra_yes": 12
+  },
+  "GPT-6.1 Sol": {
+   "n": 48,
+   "agree": 0.958,
+   "kappa": 0.81,
+   "argon_yes": 7,
+   "astra_yes": 5
+  },
+  "Claude Sonnet 5.5": {
+   "n": 48,
+   "agree": 0.979,
+   "kappa": 0.921,
+   "argon_yes": 8,
+   "astra_yes": 7
+  }
+ },
+ "exploratory_judge3": {
+  "opus_vs_argon": {
+   "all": {
+    "n": 96,
+    "agree": 0.979,
+    "kappa": 0.916,
+    "argon_yes": 15,
+    "opus_yes": 13
+   },
+   "GPT-6.1 Sol": {
+    "n": 48,
+    "agree": 0.979,
+    "kappa": 0.911,
+    "argon_yes": 7,
+    "opus_yes": 6
+   },
+   "Claude Sonnet 5.5": {
+    "n": 48,
+    "agree": 0.979,
+    "kappa": 0.921,
+    "argon_yes": 8,
+    "opus_yes": 7
+   }
+  },
+  "opus_vs_astra": {
+   "all": {
+    "n": 96,
+    "agree": 0.99,
+    "kappa": 0.954,
+    "astra_yes": 12,
+    "opus_yes": 13
+   },
+   "GPT-6.1 Sol": {
+    "n": 48,
+    "agree": 0.979,
+    "kappa": 0.897,
+    "astra_yes": 5,
+    "opus_yes": 6
+   },
+   "Claude Sonnet 5.5": {
+    "n": 48,
+    "agree": 1.0,
+    "kappa": 1.0,
+    "astra_yes": 7,
+    "opus_yes": 7
+   }
+  },
+  "n_items": 96,
+  "n_parse_errors": 0
+ }
+}

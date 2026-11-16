@@ -1,0 +1,13 @@
+TARGET CLAIM
+- Population: {p}
+- Intervention: {i}
+- Comparator: {c}
+- Outcome: {o}
+- Timeframe: {t}
+
+RESPONSE
+<<<
+{response}
+>>>
+
+Label the RESPONSE with the rubric. Output only the JSON object.
